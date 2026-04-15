@@ -17,7 +17,7 @@ async function carregarGatos() {
         container.innerHTML = "<p>Carregando...</p>";
  
         try{
-            const resposta = await fetch("https://api.thecatapi.com/v1/images/search?limit=10");
+            const resposta = await fetch("https://api.thecatapi.com/v1/images/search?limit=15");
             const gatoData = await resposta.json();
             container.innerHTML=" ";
  
